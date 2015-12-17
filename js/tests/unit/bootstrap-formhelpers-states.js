@@ -34,7 +34,7 @@ $(function () {
     var statesHTML = '<select class="bfh-states" data-country="US"></select>',
       states = $(statesHTML).bfhstates({country: 'US'});
 
-    ok(states.find('option').size() === 66, 'correct number of elements shown');
+    ok(states.find('option').size() === 58, 'correct number of elements shown');
     ok(states.find('option:selected').text() === '', 'correct option selected');
     ok(states.val() === '', 'correct element value');
     ok(states.find('option[value="CA"]').text() === 'California', 'valid state shown');
@@ -44,7 +44,7 @@ $(function () {
     var statesHTML = '<select class="bfh-states" data-country="US" data-state="CA"></select>',
       states = $(statesHTML).bfhstates({country: 'US', state: 'CA'});
 
-    ok(states.find('option').size() === 66, 'correct number of elements shown');
+    ok(states.find('option').size() === 58, 'correct number of elements shown');
     ok(states.find('option:selected').text() === 'California', 'correct option selected');
     ok(states.val() === 'CA', 'correct element value');
     ok(states.find('option[value="CA"]').text() === 'California', 'valid state shown');
@@ -54,7 +54,7 @@ $(function () {
     var statesHTML = '<select class="bfh-states" data-country="US" data-state="CA" data-blank="false"></select>',
       states = $(statesHTML).bfhstates({country: 'US', state: 'CA', blank: false});
 
-    ok(states.find('option').size() === 65, 'correct number of elements shown');
+    ok(states.find('option').size() === 57, 'correct number of elements shown');
     ok(states.find('option:selected').text() === 'California', 'correct option selected');
     ok(states.val() === 'CA', 'correct element value');
     ok(states.find('option[value="CA"]').text() === 'California', 'valid state shown');
@@ -67,7 +67,7 @@ $(function () {
       first = states.first().bfhcountries({country: 'US'}),
       last = states.last().bfhstates({country: 'countries'});
       
-    ok(last.find('option').size() === 66, 'correct number of elements shown');
+    ok(last.find('option').size() === 58, 'correct number of elements shown');
     ok(last.find('option:selected').text() === '', 'correct option selected');
     ok(last.val() === '', 'correct element value');
     ok(last.find('option[value="CA"]').text() === 'California', 'valid state shown');
@@ -87,7 +87,7 @@ $(function () {
       '</div>',
       states = $(statesHTML).bfhselectbox().bfhstates({country: 'US'});
 
-    ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 66, 'correct number of elements shown');
+    ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 58, 'correct number of elements shown');
     ok(states.find('.bfh-selectbox-option').html() === '', 'correct option selected');
     ok(states.val() === '', 'correct element value');
     ok(states.find('.bfh-selectbox-options > div > ul > li > a[data-option="CA"]').html() === 'California', 'valid state shown');
@@ -98,7 +98,7 @@ $(function () {
       '</div>',
       states = $(statesHTML).bfhselectbox().bfhstates({country: 'US', state: 'CA'});
 
-    ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 66, 'correct number of elements shown');
+    ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 58, 'correct number of elements shown');
     ok(states.find('.bfh-selectbox-option').html() === 'California', 'correct option selected');
     ok(states.val() === 'CA', 'correct element value');
     ok(states.find('.bfh-selectbox-options > div > ul > li > a[data-option="CA"]').html() === 'California', 'valid state shown');
@@ -109,7 +109,7 @@ $(function () {
       '</div>',
       states = $(statesHTML).bfhselectbox().bfhstates({country: 'US', state: 'CA', blank: false});
 
-    ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 65, 'correct number of elements shown');
+    ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 57, 'correct number of elements shown');
     ok(states.find('.bfh-selectbox-option').html() === 'California', 'correct option selected');
     ok(states.val() === 'CA', 'correct element value');
     ok(states.find('.bfh-selectbox-options > div > ul > li > a[data-option="CA"]').html() === 'California', 'valid state shown');
@@ -124,7 +124,7 @@ $(function () {
       first = states.first().bfhselectbox().bfhcountries({country: 'US'}),
       last = states.last().bfhselectbox().bfhstates({country: 'countries'});
     
-    ok(last.find('.bfh-selectbox-options > div > ul > li').size() === 66, 'correct number of elements shown');
+    ok(last.find('.bfh-selectbox-options > div > ul > li').size() === 58, 'correct number of elements shown');
     ok(last.find('.bfh-selectbox-option').html() === '', 'correct option selected');
     ok(last.val() === '', 'correct element value');
     ok(last.find('.bfh-selectbox-options > div > ul > li > a[data-option="CA"]').html() === 'California', 'valid state shown');
