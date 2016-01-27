@@ -88,7 +88,7 @@ $(function () {
       states = $(statesHTML).bfhselectbox().bfhstates({country: 'US'});
 
     ok(states.find('.bfh-selectbox-options > div > ul > li').size() === 58, 'correct number of elements shown');
-    ok(states.find('.bfh-selectbox-option').html() === '', 'correct option selected');
+    ok(states.find('.bfh-selectbox-option').html() === 'Select state', 'correct option selected');
     ok(states.val() === '', 'correct element value');
     ok(states.find('.bfh-selectbox-options > div > ul > li > a[data-option="CA"]').html() === 'California', 'valid state shown');
   });
@@ -125,14 +125,14 @@ $(function () {
       last = states.last().bfhselectbox().bfhstates({country: 'countries'});
     
     ok(last.find('.bfh-selectbox-options > div > ul > li').size() === 58, 'correct number of elements shown');
-    ok(last.find('.bfh-selectbox-option').html() === '', 'correct option selected');
+    ok(last.find('.bfh-selectbox-option').html() === 'Select state', 'correct option selected');
     ok(last.val() === '', 'correct element value');
     ok(last.find('.bfh-selectbox-options > div > ul > li > a[data-option="CA"]').html() === 'California', 'valid state shown');
     
     first.val('CA').change();
     
     ok(last.find('.bfh-selectbox-options > div > ul > li').size() === 14, 'correct number of elements shown');
-    ok(last.find('.bfh-selectbox-option').html() === '', 'correct option selected');
+    ok(last.find('.bfh-selectbox-option').html() === 'Select state', 'correct option selected');
     ok(last.val() === '', 'correct element value');
     ok(last.find('.bfh-selectbox-options > div > ul > li > a[data-option="ON"]').html() === 'Ontario', 'valid state shown');
     

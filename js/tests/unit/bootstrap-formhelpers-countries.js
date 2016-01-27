@@ -83,7 +83,7 @@ $(function () {
       countries = $(countriesHTML).bfhselectbox().bfhcountries();
 
     ok(countries.find('.bfh-selectbox-options > div > ul > li').size() === 242, 'correct number of elements shown');
-    ok(countries.find('.bfh-selectbox-option').html() === '', 'correct option selected');
+    ok(countries.find('.bfh-selectbox-option').html() === 'Select country', 'correct option selected');
     ok(countries.val() === '', 'correct element value');
     ok(countries.find('.bfh-selectbox-options > div > ul > li > a[data-option="US"]').html() === 'United States', 'valid country shown');
   });
@@ -105,7 +105,7 @@ $(function () {
       countries = $(countriesHTML).bfhselectbox().bfhcountries({available: 'US,CA,MX'});
       
     ok(countries.find('.bfh-selectbox-options > div > ul > li').size() === 4, 'correct number of elements shown');
-    ok(countries.find('.bfh-selectbox-option').html() === '', 'correct option selected');
+    ok(countries.find('.bfh-selectbox-option').html() === 'Select country', 'correct option selected');
     ok(countries.val() === '', 'correct element value');
     ok(countries.find('.bfh-selectbox-options > div > ul > li > a[data-option="US"]').html() === 'United States', 'valid country shown');
   });

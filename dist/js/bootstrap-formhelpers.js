@@ -1,6 +1,6 @@
 /**
 * bootstrap-formhelpers.js v2.3.1 by @vincentlamanna
-* Copyright 2015 Vincent Lamanna
+* Copyright 2016 Vincent Lamanna
 * http://www.apache.org/licenses/LICENSE-2.0
 */
 if (!jQuery) { throw new Error("Bootstrap Form Helpers requires jQuery"); }
@@ -14223,7 +14223,7 @@ var BFHTimezonesList = {
       $options.html('');
 
       if (this.options.blank === true) {
-        $options.append('<li><a tabindex="-1" href="#" data-option=""></a></li>');
+        $options.append('<li><a tabindex="-1" href="#" data-option="">Select country</a></li>');
       }
 
       for (country in countries) {
@@ -17192,7 +17192,7 @@ var BFHTimezonesList = {
       $options.html('');
 
       if (this.options.blank === true) {
-        $options.append('<li><a tabindex="-1" href="#" data-option=""></a></li>');
+        $options.append('<li><a tabindex="-1" href="#" data-option="">Select state</a></li>');
       }
 
       for (state in BFHStatesList[country]) {

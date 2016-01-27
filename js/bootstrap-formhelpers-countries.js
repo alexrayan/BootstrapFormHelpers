@@ -113,7 +113,7 @@
       $options.html('');
 
       if (this.options.blank === true) {
-        $options.append('<li><a tabindex="-1" href="#" data-option=""></a></li>');
+        $options.append('<li><a tabindex="-1" href="#" data-option="">Select country</a></li>');
       }
 
       for (country in countries) {
